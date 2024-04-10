@@ -1,0 +1,1082 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/meldb/ontologies/2024/3/BBO#"
+     xml:base="http://www.semanticweb.org/meldb/ontologies/2024/3/BBO"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
+    <owl:Ontology rdf:about="http://www.cognosys.co.uk/ontologies/BBO">
+        <owl:versionIRI rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/1.0.0"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2022-07-19/MFOEM.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ogms/2021-08-19/ogms.owl"/>
+        <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-02-14/MergedAllCoreOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000059"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000132"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000133 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000133">
+        <rdfs:label xml:lang="en">process profile of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000176 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000176"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000178 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/hasSituationPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.cognosys.co.uk/ontologies/BBO/hasSituationPart">
+        <rdfs:label xml:lang="en">has situation part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/affects -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/affects"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/has_output -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_output"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/is_about -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000005"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000195 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM_000195"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/MentalRepresentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000075"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000020 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000020">
+        <owl:equivalentClass rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/SymptomProcess"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000090 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000090">
+        <owl:equivalentClass rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/TreatmentProcess"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurden">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurdenObject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurdensomeness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurdenObject -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurdenObject">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurden"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurdensomeness -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurdensomeness">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurden"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfDiseaseBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfDiseaseBurden">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurden"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurdenObject"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/Situation"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/hasSituationPart"/>
+                                                                        <owl:someValuesFrom>
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                                                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+                                                                            </owl:Restriction>
+                                                                        </owl:someValuesFrom>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurden"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfSideEffectBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfSideEffectBurden">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurden"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfSymptomBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfSymptomBurden">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurden"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurdenObject"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/Situation"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/hasSituationPart"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/SymptomProcess"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurden"/>
+        <owl:disjointWith rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfTreatmentBurden"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfTreatmentBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfTreatmentBurden">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurden"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurdenObject"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/is_about"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/Situation"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/hasSituationPart"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/TreatmentProcess"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfBurden"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000195"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/CaregiverRole -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/CaregiverRole">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/ChronicDisease -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/ChronicDisease">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000064"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000064"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/ChronicDisorder -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/ChronicDisorder">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000127"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/ChronicDisease"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/ChronicHealthCondition -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/ChronicHealthCondition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/HealthCondition"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000064"/>
+                            <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/ChronicDisease"/>
+                            <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/ChronicDisorder"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/HealthCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/CognitiveBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/CognitiveBurden">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/ComorbidStatus -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/ComorbidStatus">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/MorbidityStatus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/MorbidityStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/ConativeRepresentation -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/ConativeRepresentation">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/MentalRepresentation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Objective"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/DiseaseBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/DiseaseBurden">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000002"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_output"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfDiseaseBurden"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/EmotionalBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/EmotionalBurden">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/EpistemicBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/EpistemicBurden">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/Expectation -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/Expectation">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/ConativeRepresentation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/SubjectiveImportance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/SubjectiveLikelihood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/FeelingOfBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/FeelingOfBurden">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM_000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/FinancialBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/FinancialBurden">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/FormalCaregiverRole -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/FormalCaregiverRole">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/CaregiverRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/HealthCondition -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/HealthCondition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000063"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/HumanPatient -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/HumanPatient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000016"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/PatientRole"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/HumanPatientWithChronicHealthCondition -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/HumanPatientWithChronicHealthCondition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/HumanPatient"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/ChronicDisease"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/HumanPatient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/InformalCaregiverRole -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/InformalCaregiverRole">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/CaregiverRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/MentalRepresentation -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/MentalRepresentation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000075"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/MorbidityStatus -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/MorbidityStatus">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/MultimorbidStatus -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/MultimorbidStatus">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/MorbidityStatus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/MorbidityStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/NegativeEffect -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/NegativeEffect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Effect"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/affects"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/SubjectiveLikelihood"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/PositiveExpectation"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/affects"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/SubjectiveLikelihood"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/NegativeExpectation"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Effect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/NegativeExpectation -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/NegativeExpectation">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/Expectation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/PatientRole -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/PatientRole">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/PortionOfReality -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/PortionOfReality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/PositiveEffect -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/PositiveEffect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Effect"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/affects"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/SubjectiveLikelihood"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/NegativeExpectation"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/affects"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/SubjectiveLikelihood"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/PositiveExpectation"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Effect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/PositiveExpectation -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/PositiveExpectation">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/Expectation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/SideEffectBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/SideEffectBurden">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/Situation -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/Situation">
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/PortionOfReality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/SubjectiveImportance -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/SubjectiveImportance">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000075"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/SubjectiveLikelihood -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/SubjectiveLikelihood">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000075"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/SymptomBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/SymptomBurden">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000002"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_output"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfSymptomBurden"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/SymptomProcess -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/SymptomProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/TreatmentBurden -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/TreatmentBurden">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MFOEM_000002"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_output"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/AppraisalOfTreatmentBurden"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/BurdenProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/TreatmentProcess -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/TreatmentProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cognosys.co.uk/ontologies/BBO/UnimorbidStatus -->
+
+    <owl:Class rdf:about="http://www.cognosys.co.uk/ontologies/BBO/UnimorbidStatus">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/MorbidityStatus"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000197"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000031"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.cognosys.co.uk/ontologies/BBO/MorbidityStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Effect -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Effect"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Objective -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Objective"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity"/>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/CognitiveBurden"/>
+            <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/DiseaseBurden"/>
+            <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/EmotionalBurden"/>
+            <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/EpistemicBurden"/>
+            <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/FinancialBurden"/>
+            <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/SideEffectBurden"/>
+            <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/SymptomBurden"/>
+            <rdf:Description rdf:about="http://www.cognosys.co.uk/ontologies/BBO/TreatmentBurden"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
