@@ -19,10 +19,10 @@ The BBO repository is organized as follows:
 
 * [BBO.owl](BBO.owl): The latest version of the BBO in Web Ontology Language (OWL) format.
 * [BBO.ttl](BBO.ttl): The latest version of the BBO in Terse RDF Triple Language (Turtle) format.
-    * bbo-merged [dir]
+    * bbo-merged [dir]:
         * [BBO_Merged.owl](bbo-merged/BBO_Merged.owl): A merged version of the BBO, including all imported ontologies (OWL format).
         * [BBO_Merged.ttl](bbo-merged/BBO_Merged.ttl): A merged version of the BBO, including all imported ontologies (Turtle format).
-    * documentation [dir]
+    * documentation [dir]:
         * [BBO Ontology Documentation.pdf](documentation/BBO%20Ontology%20Documentation.pdf): Documentation for the classes/properties contained in the BBO, as well as a subset of the classes/properties in imported ontologies. 
 
 # BBO Entities
