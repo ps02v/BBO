@@ -25,8 +25,8 @@ A merged version of the BBO (containing all imported ontologies) is available [h
   * [`BBO Ontology Documentation.pdf`](documentation/BBO%20Ontology%20Documentation.pdf): Documentation for the classes/properties contained in the BBO, as well as a subset of the classes/properties in imported ontologies.
 * `archive/`: Contains archived versions of the BBO for historical reference.
 * `bbo-merged/`: Contains merged versions of the BBO.
-    * [BBO_Merged.owl](bbo-merged/BBO_Merged.owl): A merged version of the BBO, including all imported ontologies (OWL format).
-    * [BBO_Merged.ttl](bbo-merged/BBO_Merged.ttl): A merged version of the BBO, including all imported ontologies (Turtle format).
+    * [`BBO_Merged.owl`](bbo-merged/BBO_Merged.owl): A merged version of the BBO, including all imported ontologies (OWL format).
+    * [`BBO_Merged.ttl`](bbo-merged/BBO_Merged.ttl): A merged version of the BBO, including all imported ontologies (Turtle format).
 
 # BBO Entities
 Some of the entities contained in the BBO are as follows:
