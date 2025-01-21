@@ -1,5 +1,6 @@
 @prefix : <http://www.cognosys.co.uk/ontologies/BBO.owl#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix BBO: <https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#> .
 @prefix bbo: <http://www.cognosys.co.uk/ontologies/BBO.owl#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -14,27 +15,28 @@
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
 @prefix ace_lexicon: <http://attempto.ifi.uzh.ch/ace_lexicon#> .
 @prefix CommonCoreOntologies: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
-@base <http://www.cognosys.co.uk/ontologies/BBO.owl> .
+@base <http://www.cognosys.co.uk/ontologies/BBO.owl#> .
 
-<http://www.cognosys.co.uk/ontologies/BBO.owl> rdf:type owl:Ontology ;
-                                                owl:versionIRI <http://www.cognosys.co.uk/ontologies/BBO/2024-04-18/BBO.owl> ;
-                                                owl:imports obo:MFOEM.owl ,
-                                                            <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl> ,
-                                                            <http://purl.obolibrary.org/obo/ogms/2021-08-19/ogms.owl> ,
-                                                            <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology> ;
-                                                dc:contributor "Michael Boniface" ,
-                                                               "Nic Fair" ;
-                                                dc:creator "Paul Smart" ;
-                                                dc:description "The Biomedical Burden Ontology is an ontology of biomedical burdens. It includes support for burden-related entities, such as treatment burden, symptom burden, and burden appraisals." ;
-                                                dc:title "Biomedical Burden Ontology" ;
-                                                owl:versionInfo "2024-04-18" .
+<https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl> rdf:type owl:Ontology ;
+                                                               owl:versionIRI <https://git.soton.ac.uk/meldb/ontologies/-/raw/main/archive/BBO/2025-01-14/BBO.owl> ;
+                                                               owl:imports obo:MFOEM.owl ,
+                                                                           <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl> ,
+                                                                           <http://purl.obolibrary.org/obo/ogms/2021-08-19/ogms.owl> ,
+                                                                           <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology> ;
+                                                               dc:contributor "Michael Boniface" ,
+                                                                              "Nic Fair" ;
+                                                               dc:creator "Paul Smart" ;
+                                                               dc:description "The Biomedical Burden Ontology is an ontology of biomedical burdens. It includes support for burden-related entities, such as treatment burden, symptom burden, and burden appraisals." ;
+                                                               dc:title "Biomedical Burden Ontology" ;
+                                                               owl:priorVersion <http://www.cognosys.co.uk/ontologies/BBO/2024-04-18/BBO.owl> ;
+                                                               owl:versionInfo "2025-01-14" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#documentationComment
-bbo:documentationComment rdf:type owl:AnnotationProperty .
+###  http://www.ontologyrepository.com/CommonCoreOntologies/definition
+CommonCoreOntologies:definition rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2002/07/owl#minQualifiedCardinality
@@ -43,6 +45,10 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2002/07/owl#qualifiedCardinality
 owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#documentationComment
+BBO:documentationComment rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -67,8 +73,8 @@ obo:BFO_0000132 rdf:type owl:ObjectProperty .
 
 ###  http://purl.obolibrary.org/obo/BFO_0000133
 obo:BFO_0000133 rdf:type owl:ObjectProperty ;
-                bbo:documentationComment "Added missing label."@en ;
-                rdfs:label "process profile of"@en .
+                rdfs:label "process profile of"@en ;
+                BBO:documentationComment "Added missing label."@en .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000176
@@ -77,13 +83,6 @@ obo:BFO_0000176 rdf:type owl:ObjectProperty .
 
 ###  http://purl.obolibrary.org/obo/BFO_0000178
 obo:BFO_0000178 rdf:type owl:ObjectProperty .
-
-
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#hasSituationPart
-bbo:hasSituationPart rdf:type owl:ObjectProperty ;
-                     rdfs:domain bbo:Situation ;
-                     CommonCoreOntologies:definition "Specifies the entities that comprise a given Situation."@en ;
-                     rdfs:label "has situation part"@en .
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/affects
@@ -96,6 +95,13 @@ CommonCoreOntologies:has_output rdf:type owl:ObjectProperty .
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/is_about
 CommonCoreOntologies:is_about rdf:type owl:ObjectProperty .
+
+
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#hasSituationPart
+BBO:hasSituationPart rdf:type owl:ObjectProperty ;
+                     rdfs:domain BBO:Situation ;
+                     CommonCoreOntologies:definition "Specifies the entities that comprise a given Situation."@en ;
+                     rdfs:label "has situation part"@en .
 
 
 #################################################################
@@ -128,7 +134,7 @@ obo:MF_0000030 rdf:type owl:Class .
 
 ###  http://purl.obolibrary.org/obo/MF_0000031
 obo:MF_0000031 rdf:type owl:Class ;
-               rdfs:subClassOf bbo:MentalRepresentation .
+               rdfs:subClassOf BBO:MentalRepresentation .
 
 
 ###  http://purl.obolibrary.org/obo/MF_0000075
@@ -136,7 +142,7 @@ obo:MF_0000075 rdf:type owl:Class .
 
 
 ###  http://purl.obolibrary.org/obo/OGMS_0000020
-obo:OGMS_0000020 owl:equivalentClass bbo:SymptomProcess .
+obo:OGMS_0000020 owl:equivalentClass BBO:SymptomProcess .
 
 
 ###  http://purl.obolibrary.org/obo/OGMS_0000031
@@ -144,54 +150,74 @@ obo:OGMS_0000031 owl:equivalentClass CommonCoreOntologies:Disease .
 
 
 ###  http://purl.obolibrary.org/obo/OGMS_0000090
-obo:OGMS_0000090 owl:equivalentClass bbo:TreatmentProcess .
+obo:OGMS_0000090 owl:equivalentClass BBO:TreatmentProcess .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#AppraisalOfBurden
-bbo:AppraisalOfBurden rdf:type owl:Class ;
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality
+CommonCoreOntologies:DecreaseOfQuality rdf:type owl:Class .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Effect
+CommonCoreOntologies:Effect rdf:type owl:Class .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality
+CommonCoreOntologies:IncreaseOfQuality rdf:type owl:Class .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Objective
+CommonCoreOntologies:Objective rdf:type owl:Class .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity
+CommonCoreOntologies:RepresentationalInformationContentEntity rdf:type owl:Class .
+
+
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#AppraisalOfBurden
+BBO:AppraisalOfBurden rdf:type owl:Class ;
                       rdfs:subClassOf obo:MFOEM_000005 ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty obo:BFO_0000178 ;
                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass bbo:AppraisalOfBurdenObject
+                                        owl:onClass BBO:AppraisalOfBurdenObject
                                       ] ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty obo:BFO_0000178 ;
                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                        owl:onClass bbo:AppraisalOfBurdensomeness
+                                        owl:onClass BBO:AppraisalOfBurdensomeness
                                       ] ;
                       CommonCoreOntologies:definition "An Appraisal of Burden is an appraisal that is produced by an appraisal process, which occurs as part of a Burden Process. Each Appraisal of Burden is constituted by an Appraisal of Burden Object and an Appraisal of Burdensomeness. The former specifies the Situation that is perceived as burdensome, while the latter specifies the reasons why the Situation is perceived as burdensome."@en ;
                       rdfs:label "Appraisal Of Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#AppraisalOfBurdenObject
-bbo:AppraisalOfBurdenObject rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#AppraisalOfBurdenObject
+BBO:AppraisalOfBurdenObject rdf:type owl:Class ;
                             rdfs:subClassOf obo:MFOEM_000005 ;
                             CommonCoreOntologies:definition "An Appraisal of Burden Object is an appraisal that is about a given Situation that is perceived/appraised as burdensome."@en ;
                             rdfs:label "Appraisal Of Burden Object"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#AppraisalOfBurdensomeness
-bbo:AppraisalOfBurdensomeness rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#AppraisalOfBurdensomeness
+BBO:AppraisalOfBurdensomeness rdf:type owl:Class ;
                               rdfs:subClassOf obo:MFOEM_000005 ;
                               CommonCoreOntologies:definition "An Appraisal of Burdensomeness is an appraisal that is refers to the impacts of (or effects) of a Situation. It denotes the reasons why a Situation is appraised as burdensome."@en ;
                               rdfs:label "Appraisal Of Burdensomeness"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#AppraisalOfCognitiveBurden
-bbo:AppraisalOfCognitiveBurden rdf:type owl:Class ;
-                               owl:equivalentClass [ owl:intersectionOf ( bbo:AppraisalOfBurden
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#AppraisalOfCognitiveBurden
+BBO:AppraisalOfCognitiveBurden rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( BBO:AppraisalOfBurden
                                                                           [ rdf:type owl:Restriction ;
                                                                             owl:onProperty obo:BFO_0000178 ;
-                                                                            owl:someValuesFrom [ owl:intersectionOf ( bbo:AppraisalOfBurdenObject
+                                                                            owl:someValuesFrom [ owl:intersectionOf ( BBO:AppraisalOfBurdenObject
                                                                                                                       [ rdf:type owl:Restriction ;
                                                                                                                         owl:onProperty obo:BFO_0000059 ;
                                                                                                                         owl:someValuesFrom [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                                                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                                                                                     owl:onProperty CommonCoreOntologies:is_about ;
-                                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( bbo:Situation
+                                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( BBO:Situation
                                                                                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                                                                                owl:onProperty bbo:hasSituationPart ;
+                                                                                                                                                                                                                owl:onProperty BBO:hasSituationPart ;
                                                                                                                                                                                                                 owl:someValuesFrom obo:MF_0000008
                                                                                                                                                                                                               ]
                                                                                                                                                                                                             ) ;
@@ -209,25 +235,25 @@ bbo:AppraisalOfCognitiveBurden rdf:type owl:Class ;
                                                                         ) ;
                                                      rdf:type owl:Class
                                                    ] ;
-                               rdfs:subClassOf bbo:AppraisalOfBurden ;
+                               rdfs:subClassOf BBO:AppraisalOfBurden ;
                                CommonCoreOntologies:definition "An Appraisal of Cognitive Burden is an Appraisal of Burden that refers to a cognitive process."@en ;
                                rdfs:label "Appraisal Of Cognitive Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#AppraisalOfDiseaseBurden
-bbo:AppraisalOfDiseaseBurden rdf:type owl:Class ;
-                             owl:equivalentClass [ owl:intersectionOf ( bbo:AppraisalOfBurden
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#AppraisalOfDiseaseBurden
+BBO:AppraisalOfDiseaseBurden rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( BBO:AppraisalOfBurden
                                                                         [ rdf:type owl:Restriction ;
                                                                           owl:onProperty obo:BFO_0000178 ;
-                                                                          owl:someValuesFrom [ owl:intersectionOf ( bbo:AppraisalOfBurdenObject
+                                                                          owl:someValuesFrom [ owl:intersectionOf ( BBO:AppraisalOfBurdenObject
                                                                                                                     [ rdf:type owl:Restriction ;
                                                                                                                       owl:onProperty obo:BFO_0000059 ;
                                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                                                                                                                                 [ rdf:type owl:Restriction ;
                                                                                                                                                                   owl:onProperty CommonCoreOntologies:is_about ;
-                                                                                                                                                                  owl:someValuesFrom [ owl:intersectionOf ( bbo:Situation
+                                                                                                                                                                  owl:someValuesFrom [ owl:intersectionOf ( BBO:Situation
                                                                                                                                                                                                             [ rdf:type owl:Restriction ;
-                                                                                                                                                                                                              owl:onProperty bbo:hasSituationPart ;
+                                                                                                                                                                                                              owl:onProperty BBO:hasSituationPart ;
                                                                                                                                                                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
                                                                                                                                                                                                                                    owl:onProperty obo:BFO_0000055 ;
                                                                                                                                                                                                                                    owl:someValuesFrom obo:OGMS_0000031
@@ -248,25 +274,25 @@ bbo:AppraisalOfDiseaseBurden rdf:type owl:Class ;
                                                                       ) ;
                                                    rdf:type owl:Class
                                                  ] ;
-                             rdfs:subClassOf bbo:AppraisalOfBurden ;
+                             rdfs:subClassOf BBO:AppraisalOfBurden ;
                              CommonCoreOntologies:definition "An Appraisal of Disease Burden is an Appraisal of Burden that refers to a disease-related process, where the notion of a disease-related process is understood to be a process that realizes a disease."@en ;
                              rdfs:label "Appraisal Of Disease Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#AppraisalOfEmotionalBurden
-bbo:AppraisalOfEmotionalBurden rdf:type owl:Class ;
-                               owl:equivalentClass [ owl:intersectionOf ( bbo:AppraisalOfBurden
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#AppraisalOfEmotionalBurden
+BBO:AppraisalOfEmotionalBurden rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( BBO:AppraisalOfBurden
                                                                           [ rdf:type owl:Restriction ;
                                                                             owl:onProperty obo:BFO_0000178 ;
-                                                                            owl:someValuesFrom [ owl:intersectionOf ( bbo:AppraisalOfBurdenObject
+                                                                            owl:someValuesFrom [ owl:intersectionOf ( BBO:AppraisalOfBurdenObject
                                                                                                                       [ rdf:type owl:Restriction ;
                                                                                                                         owl:onProperty obo:BFO_0000059 ;
                                                                                                                         owl:someValuesFrom [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                                                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                                                                                     owl:onProperty CommonCoreOntologies:is_about ;
-                                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( bbo:Situation
+                                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( BBO:Situation
                                                                                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                                                                                owl:onProperty bbo:hasSituationPart ;
+                                                                                                                                                                                                                owl:onProperty BBO:hasSituationPart ;
                                                                                                                                                                                                                 owl:someValuesFrom obo:MFOEM_000001
                                                                                                                                                                                                               ]
                                                                                                                                                                                                             ) ;
@@ -284,26 +310,26 @@ bbo:AppraisalOfEmotionalBurden rdf:type owl:Class ;
                                                                         ) ;
                                                      rdf:type owl:Class
                                                    ] ;
-                               rdfs:subClassOf bbo:AppraisalOfBurden ;
+                               rdfs:subClassOf BBO:AppraisalOfBurden ;
                                CommonCoreOntologies:definition "An Appraisal of Emotional Burden is an Appraisal of Burden that refers to an emotion process."@en ;
                                rdfs:label "Appraisal Of Emotional Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#AppraisalOfEpistemicBurden
-bbo:AppraisalOfEpistemicBurden rdf:type owl:Class ;
-                               owl:equivalentClass [ owl:intersectionOf ( bbo:AppraisalOfBurden
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#AppraisalOfEpistemicBurden
+BBO:AppraisalOfEpistemicBurden rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( BBO:AppraisalOfBurden
                                                                           [ rdf:type owl:Restriction ;
                                                                             owl:onProperty obo:BFO_0000178 ;
-                                                                            owl:someValuesFrom [ owl:intersectionOf ( bbo:AppraisalOfBurdenObject
+                                                                            owl:someValuesFrom [ owl:intersectionOf ( BBO:AppraisalOfBurdenObject
                                                                                                                       [ rdf:type owl:Restriction ;
                                                                                                                         owl:onProperty obo:BFO_0000059 ;
                                                                                                                         owl:someValuesFrom [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                                                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                                                                                     owl:onProperty CommonCoreOntologies:is_about ;
-                                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( bbo:Situation
+                                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( BBO:Situation
                                                                                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                                                                                owl:onProperty bbo:hasSituationPart ;
-                                                                                                                                                                                                                owl:someValuesFrom bbo:EpistemicProcess
+                                                                                                                                                                                                                owl:onProperty BBO:hasSituationPart ;
+                                                                                                                                                                                                                owl:someValuesFrom BBO:EpistemicProcess
                                                                                                                                                                                                               ]
                                                                                                                                                                                                             ) ;
                                                                                                                                                                                          rdf:type owl:Class
@@ -320,25 +346,25 @@ bbo:AppraisalOfEpistemicBurden rdf:type owl:Class ;
                                                                         ) ;
                                                      rdf:type owl:Class
                                                    ] ;
-                               rdfs:subClassOf bbo:AppraisalOfBurden ;
+                               rdfs:subClassOf BBO:AppraisalOfBurden ;
                                CommonCoreOntologies:definition "An Appraisal of Epistemic Burden is an Appraisal of Burden that refers to an Epistemic Process."@en ;
                                rdfs:label "Appraisal Of Epistemic Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#AppraisalOfFinancialBurden
-bbo:AppraisalOfFinancialBurden rdf:type owl:Class ;
-                               owl:equivalentClass [ owl:intersectionOf ( bbo:AppraisalOfBurden
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#AppraisalOfFinancialBurden
+BBO:AppraisalOfFinancialBurden rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( BBO:AppraisalOfBurden
                                                                           [ rdf:type owl:Restriction ;
                                                                             owl:onProperty obo:BFO_0000178 ;
-                                                                            owl:someValuesFrom [ owl:intersectionOf ( bbo:AppraisalOfBurdenObject
+                                                                            owl:someValuesFrom [ owl:intersectionOf ( BBO:AppraisalOfBurdenObject
                                                                                                                       [ rdf:type owl:Restriction ;
                                                                                                                         owl:onProperty obo:BFO_0000059 ;
                                                                                                                         owl:someValuesFrom [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                                                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                                                                                     owl:onProperty CommonCoreOntologies:is_about ;
-                                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( bbo:Situation
+                                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( BBO:Situation
                                                                                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                                                                                owl:onProperty bbo:hasSituationPart ;
+                                                                                                                                                                                                                owl:onProperty BBO:hasSituationPart ;
                                                                                                                                                                                                                 owl:someValuesFrom CommonCoreOntologies:ActOfFinancialInstrumentUse
                                                                                                                                                                                                               ]
                                                                                                                                                                                                             ) ;
@@ -356,26 +382,26 @@ bbo:AppraisalOfFinancialBurden rdf:type owl:Class ;
                                                                         ) ;
                                                      rdf:type owl:Class
                                                    ] ;
-                               rdfs:subClassOf bbo:AppraisalOfBurden ;
+                               rdfs:subClassOf BBO:AppraisalOfBurden ;
                                CommonCoreOntologies:definition "An Appraisal of Financial Burden is an Appraisal of Burden that refers to a financial process (i.e., an Act of Financial Instrument Use)."@en ;
                                rdfs:label "Appraisal Of Financial Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#AppraisalOfSideEffectBurden
-bbo:AppraisalOfSideEffectBurden rdf:type owl:Class ;
-                                owl:equivalentClass [ owl:intersectionOf ( bbo:AppraisalOfBurden
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#AppraisalOfSideEffectBurden
+BBO:AppraisalOfSideEffectBurden rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( BBO:AppraisalOfBurden
                                                                            [ rdf:type owl:Restriction ;
                                                                              owl:onProperty obo:BFO_0000178 ;
-                                                                             owl:someValuesFrom [ owl:intersectionOf ( bbo:AppraisalOfBurdenObject
+                                                                             owl:someValuesFrom [ owl:intersectionOf ( BBO:AppraisalOfBurdenObject
                                                                                                                        [ rdf:type owl:Restriction ;
                                                                                                                          owl:onProperty obo:BFO_0000059 ;
                                                                                                                          owl:someValuesFrom [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                                                                                                                                    [ rdf:type owl:Restriction ;
                                                                                                                                                                      owl:onProperty CommonCoreOntologies:is_about ;
-                                                                                                                                                                     owl:someValuesFrom [ owl:intersectionOf ( bbo:Situation
+                                                                                                                                                                     owl:someValuesFrom [ owl:intersectionOf ( BBO:Situation
                                                                                                                                                                                                                [ rdf:type owl:Restriction ;
-                                                                                                                                                                                                                 owl:onProperty bbo:hasSituationPart ;
-                                                                                                                                                                                                                 owl:someValuesFrom bbo:SideEffect
+                                                                                                                                                                                                                 owl:onProperty BBO:hasSituationPart ;
+                                                                                                                                                                                                                 owl:someValuesFrom BBO:SideEffect
                                                                                                                                                                                                                ]
                                                                                                                                                                                                              ) ;
                                                                                                                                                                                           rdf:type owl:Class
@@ -392,26 +418,26 @@ bbo:AppraisalOfSideEffectBurden rdf:type owl:Class ;
                                                                          ) ;
                                                       rdf:type owl:Class
                                                     ] ;
-                                rdfs:subClassOf bbo:AppraisalOfBurden ;
+                                rdfs:subClassOf BBO:AppraisalOfBurden ;
                                 CommonCoreOntologies:definition "An Appraisal of Side-Effect Burden is an Appraisal of Burden that refers to a side-effect."@en ;
                                 rdfs:label "Appraisal Of Side-Effect Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#AppraisalOfSymptomBurden
-bbo:AppraisalOfSymptomBurden rdf:type owl:Class ;
-                             owl:equivalentClass [ owl:intersectionOf ( bbo:AppraisalOfBurden
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#AppraisalOfSymptomBurden
+BBO:AppraisalOfSymptomBurden rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( BBO:AppraisalOfBurden
                                                                         [ rdf:type owl:Restriction ;
                                                                           owl:onProperty obo:BFO_0000178 ;
-                                                                          owl:someValuesFrom [ owl:intersectionOf ( bbo:AppraisalOfBurdenObject
+                                                                          owl:someValuesFrom [ owl:intersectionOf ( BBO:AppraisalOfBurdenObject
                                                                                                                     [ rdf:type owl:Restriction ;
                                                                                                                       owl:onProperty obo:BFO_0000059 ;
                                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                                                                                                                                 [ rdf:type owl:Restriction ;
                                                                                                                                                                   owl:onProperty CommonCoreOntologies:is_about ;
-                                                                                                                                                                  owl:someValuesFrom [ owl:intersectionOf ( bbo:Situation
+                                                                                                                                                                  owl:someValuesFrom [ owl:intersectionOf ( BBO:Situation
                                                                                                                                                                                                             [ rdf:type owl:Restriction ;
-                                                                                                                                                                                                              owl:onProperty bbo:hasSituationPart ;
-                                                                                                                                                                                                              owl:someValuesFrom bbo:SymptomProcess
+                                                                                                                                                                                                              owl:onProperty BBO:hasSituationPart ;
+                                                                                                                                                                                                              owl:someValuesFrom BBO:SymptomProcess
                                                                                                                                                                                                             ]
                                                                                                                                                                                                           ) ;
                                                                                                                                                                                        rdf:type owl:Class
@@ -428,27 +454,27 @@ bbo:AppraisalOfSymptomBurden rdf:type owl:Class ;
                                                                       ) ;
                                                    rdf:type owl:Class
                                                  ] ;
-                             rdfs:subClassOf bbo:AppraisalOfBurden ;
-                             owl:disjointWith bbo:AppraisalOfTreatmentBurden ;
+                             rdfs:subClassOf BBO:AppraisalOfBurden ;
+                             owl:disjointWith BBO:AppraisalOfTreatmentBurden ;
                              CommonCoreOntologies:definition "An Appraisal of Symptom Burden is an Appraisal of Burden that refers to a Symptom Process."@en ;
                              rdfs:label "Appraisal Of Symptom Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#AppraisalOfTreatmentBurden
-bbo:AppraisalOfTreatmentBurden rdf:type owl:Class ;
-                               owl:equivalentClass [ owl:intersectionOf ( bbo:AppraisalOfBurden
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#AppraisalOfTreatmentBurden
+BBO:AppraisalOfTreatmentBurden rdf:type owl:Class ;
+                               owl:equivalentClass [ owl:intersectionOf ( BBO:AppraisalOfBurden
                                                                           [ rdf:type owl:Restriction ;
                                                                             owl:onProperty obo:BFO_0000178 ;
-                                                                            owl:someValuesFrom [ owl:intersectionOf ( bbo:AppraisalOfBurdenObject
+                                                                            owl:someValuesFrom [ owl:intersectionOf ( BBO:AppraisalOfBurdenObject
                                                                                                                       [ rdf:type owl:Restriction ;
                                                                                                                         owl:onProperty obo:BFO_0000059 ;
                                                                                                                         owl:someValuesFrom [ owl:intersectionOf ( CommonCoreOntologies:RepresentationalInformationContentEntity
                                                                                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                                                                                     owl:onProperty CommonCoreOntologies:is_about ;
-                                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( bbo:Situation
+                                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( BBO:Situation
                                                                                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                                                                                owl:onProperty bbo:hasSituationPart ;
-                                                                                                                                                                                                                owl:someValuesFrom bbo:TreatmentProcess
+                                                                                                                                                                                                                owl:onProperty BBO:hasSituationPart ;
+                                                                                                                                                                                                                owl:someValuesFrom BBO:TreatmentProcess
                                                                                                                                                                                                               ]
                                                                                                                                                                                                             ) ;
                                                                                                                                                                                          rdf:type owl:Class
@@ -465,13 +491,13 @@ bbo:AppraisalOfTreatmentBurden rdf:type owl:Class ;
                                                                         ) ;
                                                      rdf:type owl:Class
                                                    ] ;
-                               rdfs:subClassOf bbo:AppraisalOfBurden ;
+                               rdfs:subClassOf BBO:AppraisalOfBurden ;
                                CommonCoreOntologies:definition "An Appraisal of Treatment Burden is an Appraisal of Burden that refers to a Treatment Process."@en ;
                                rdfs:label "Appraisal Of Treatment Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#BurdenProcess
-bbo:BurdenProcess rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#BurdenProcess
+BBO:BurdenProcess rdf:type owl:Class ;
                   rdfs:subClassOf obo:MFOEM_000195 ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty [ owl:inverseOf obo:BFO_0000133
@@ -482,15 +508,15 @@ bbo:BurdenProcess rdf:type owl:Class ;
                   rdfs:label "Burden Process"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#CaregiverRole
-bbo:CaregiverRole rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#CaregiverRole
+BBO:CaregiverRole rdf:type owl:Class ;
                   rdfs:subClassOf obo:BFO_0000023 ;
                   CommonCoreOntologies:definition "A Caregiver Role is a role borne by caregivers."@en ;
                   rdfs:label "Caregiver Role"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#ChronicDisease
-bbo:ChronicDisease rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#ChronicDisease
+BBO:ChronicDisease rdf:type owl:Class ;
                    owl:equivalentClass [ rdf:type owl:Class ;
                                          owl:unionOf ( [ owl:intersectionOf ( obo:OGMS_0000031
                                                                               [ rdf:type owl:Restriction ;
@@ -522,12 +548,12 @@ bbo:ChronicDisease rdf:type owl:Class ;
                    rdfs:label "Chronic Disease"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#ChronicDisorder
-bbo:ChronicDisorder rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#ChronicDisorder
+BBO:ChronicDisorder rdf:type owl:Class ;
                     owl:equivalentClass [ owl:intersectionOf ( obo:OGMS_0000045
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty obo:BFO_0000127 ;
-                                                                 owl:someValuesFrom bbo:ChronicDisease
+                                                                 owl:someValuesFrom BBO:ChronicDisease
                                                                ]
                                                              ) ;
                                           rdf:type owl:Class
@@ -537,32 +563,32 @@ bbo:ChronicDisorder rdf:type owl:Class ;
                     rdfs:label "Chronic Disorder"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#ChronicHealthCondition
-bbo:ChronicHealthCondition rdf:type owl:Class ;
-                           owl:equivalentClass [ owl:intersectionOf ( bbo:HealthCondition
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#ChronicHealthCondition
+BBO:ChronicHealthCondition rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( BBO:HealthCondition
                                                                       [ rdf:type owl:Class ;
                                                                         owl:unionOf ( obo:OGMS_0000064
-                                                                                      bbo:ChronicDisease
-                                                                                      bbo:ChronicDisorder
+                                                                                      BBO:ChronicDisease
+                                                                                      BBO:ChronicDisorder
                                                                                     )
                                                                       ]
                                                                     ) ;
                                                  rdf:type owl:Class
                                                ] ;
-                           rdfs:subClassOf bbo:HealthCondition ;
+                           rdfs:subClassOf BBO:HealthCondition ;
                            CommonCoreOntologies:definition "A Chronic Health Condition is a Health Condition of chronic duration. Chronic Health Conditions can be Chronic Diseases, Chronic Disorders, or Chronic Disease Courses."@en ;
                            rdfs:label "Chronic Health Condition"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#CognitiveBurden
-bbo:CognitiveBurden rdf:type owl:Class ;
-                    owl:equivalentClass [ owl:intersectionOf ( bbo:BurdenProcess
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#CognitiveBurden
+BBO:CognitiveBurden rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( BBO:BurdenProcess
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty obo:BFO_0000117 ;
                                                                  owl:someValuesFrom [ owl:intersectionOf ( obo:MFOEM_000002
                                                                                                            [ rdf:type owl:Restriction ;
                                                                                                              owl:onProperty CommonCoreOntologies:has_output ;
-                                                                                                             owl:someValuesFrom bbo:AppraisalOfCognitiveBurden
+                                                                                                             owl:someValuesFrom BBO:AppraisalOfCognitiveBurden
                                                                                                            ]
                                                                                                          ) ;
                                                                                       rdf:type owl:Class
@@ -571,14 +597,14 @@ bbo:CognitiveBurden rdf:type owl:Class ;
                                                              ) ;
                                           rdf:type owl:Class
                                         ] ;
-                    rdfs:subClassOf bbo:BurdenProcess ;
+                    rdfs:subClassOf BBO:BurdenProcess ;
                     CommonCoreOntologies:definition "A Cognitive Burden is a type of burden that features appraisals related to cognitive processes."@en ;
                     rdfs:label "Cognitive Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#ComorbidStatus
-bbo:ComorbidStatus rdf:type owl:Class ;
-                   owl:equivalentClass [ owl:intersectionOf ( bbo:MorbidityStatus
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#ComorbidStatus
+BBO:ComorbidStatus rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( BBO:MorbidityStatus
                                                               [ rdf:type owl:Restriction ;
                                                                 owl:onProperty obo:BFO_0000197 ;
                                                                 owl:someValuesFrom [ rdf:type owl:Restriction ;
@@ -590,14 +616,14 @@ bbo:ComorbidStatus rdf:type owl:Class ;
                                                             ) ;
                                          rdf:type owl:Class
                                        ] ;
-                   rdfs:subClassOf bbo:MorbidityStatus ;
+                   rdfs:subClassOf BBO:MorbidityStatus ;
                    CommonCoreOntologies:definition "A Comorbid Status is a type of Morbidity Status. It applies to individuals that are the bearers of exactly two diseases."@en ;
                    rdfs:label "Comorbid Status"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#ConativeRepresentation
-bbo:ConativeRepresentation rdf:type owl:Class ;
-                           rdfs:subClassOf bbo:MentalRepresentation ,
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#ConativeRepresentation
+BBO:ConativeRepresentation rdf:type owl:Class ;
+                           rdfs:subClassOf BBO:MentalRepresentation ,
                                            [ rdf:type owl:Restriction ;
                                              owl:onProperty obo:BFO_0000059 ;
                                              owl:someValuesFrom CommonCoreOntologies:Objective
@@ -606,15 +632,15 @@ bbo:ConativeRepresentation rdf:type owl:Class ;
                            rdfs:label "Conative Representation"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#DiseaseBurden
-bbo:DiseaseBurden rdf:type owl:Class ;
-                  owl:equivalentClass [ owl:intersectionOf ( bbo:BurdenProcess
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#DiseaseBurden
+BBO:DiseaseBurden rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( BBO:BurdenProcess
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty obo:BFO_0000117 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( obo:MFOEM_000002
                                                                                                          [ rdf:type owl:Restriction ;
                                                                                                            owl:onProperty CommonCoreOntologies:has_output ;
-                                                                                                           owl:someValuesFrom bbo:AppraisalOfDiseaseBurden
+                                                                                                           owl:someValuesFrom BBO:AppraisalOfDiseaseBurden
                                                                                                          ]
                                                                                                        ) ;
                                                                                     rdf:type owl:Class
@@ -623,20 +649,20 @@ bbo:DiseaseBurden rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf bbo:BurdenProcess ;
+                  rdfs:subClassOf BBO:BurdenProcess ;
                   CommonCoreOntologies:definition "A Disease Burden is a type of burden that features appraisals related to disease processes."@en ;
                   rdfs:label "Disease Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#EmotionalBurden
-bbo:EmotionalBurden rdf:type owl:Class ;
-                    owl:equivalentClass [ owl:intersectionOf ( bbo:BurdenProcess
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#EmotionalBurden
+BBO:EmotionalBurden rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( BBO:BurdenProcess
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty obo:BFO_0000117 ;
                                                                  owl:someValuesFrom [ owl:intersectionOf ( obo:MFOEM_000002
                                                                                                            [ rdf:type owl:Restriction ;
                                                                                                              owl:onProperty CommonCoreOntologies:has_output ;
-                                                                                                             owl:someValuesFrom bbo:AppraisalOfEmotionalBurden
+                                                                                                             owl:someValuesFrom BBO:AppraisalOfEmotionalBurden
                                                                                                            ]
                                                                                                          ) ;
                                                                                       rdf:type owl:Class
@@ -645,20 +671,20 @@ bbo:EmotionalBurden rdf:type owl:Class ;
                                                              ) ;
                                           rdf:type owl:Class
                                         ] ;
-                    rdfs:subClassOf bbo:BurdenProcess ;
+                    rdfs:subClassOf BBO:BurdenProcess ;
                     CommonCoreOntologies:definition "An Emotional Burden is a type of burden that features appraisals related to emotional processes."@en ;
                     rdfs:label "Emotional Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#EpistemicBurden
-bbo:EpistemicBurden rdf:type owl:Class ;
-                    owl:equivalentClass [ owl:intersectionOf ( bbo:BurdenProcess
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#EpistemicBurden
+BBO:EpistemicBurden rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( BBO:BurdenProcess
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty obo:BFO_0000117 ;
                                                                  owl:someValuesFrom [ owl:intersectionOf ( obo:MFOEM_000002
                                                                                                            [ rdf:type owl:Restriction ;
                                                                                                              owl:onProperty CommonCoreOntologies:has_output ;
-                                                                                                             owl:someValuesFrom bbo:AppraisalOfEpistemicBurden
+                                                                                                             owl:someValuesFrom BBO:AppraisalOfEpistemicBurden
                                                                                                            ]
                                                                                                          ) ;
                                                                                       rdf:type owl:Class
@@ -667,51 +693,51 @@ bbo:EpistemicBurden rdf:type owl:Class ;
                                                              ) ;
                                           rdf:type owl:Class
                                         ] ;
-                    rdfs:subClassOf bbo:BurdenProcess ;
+                    rdfs:subClassOf BBO:BurdenProcess ;
                     CommonCoreOntologies:definition "An Epistemic Burden is a type of burden that features appraisals related to epistemic processes."@en ;
                     rdfs:label "Epistemic Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#EpistemicProcess
-bbo:EpistemicProcess rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#EpistemicProcess
+BBO:EpistemicProcess rdf:type owl:Class ;
                      rdfs:subClassOf obo:MF_0000008 ;
                      CommonCoreOntologies:definition "An Epistemic Process is a cognitive process that is concerned with the acquisition, formation, or manipulation of epistemic representations."@en ;
                      rdfs:label "Epistemic Process"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#Expectation
-bbo:Expectation rdf:type owl:Class ;
-                rdfs:subClassOf bbo:ConativeRepresentation ,
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#Expectation
+BBO:Expectation rdf:type owl:Class ;
+                rdfs:subClassOf BBO:ConativeRepresentation ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty obo:BFO_0000178 ;
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onClass bbo:SubjectiveImportance
+                                  owl:onClass BBO:SubjectiveImportance
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty obo:BFO_0000178 ;
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                  owl:onClass bbo:SubjectiveLikelihood
+                                  owl:onClass BBO:SubjectiveLikelihood
                                 ] ;
                 CommonCoreOntologies:definition "An Expectation is a Conative Representation that refers to future Situations or states-of-affairs."@en ;
                 rdfs:label "Expectation"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#FeelingOfBurden
-bbo:FeelingOfBurden rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#FeelingOfBurden
+BBO:FeelingOfBurden rdf:type owl:Class ;
                     rdfs:subClassOf obo:MFOEM_000006 ;
                     CommonCoreOntologies:definition "A Feeling of Burden is a subjective affective feeling experienced by individuals who are subject to burden."@en ;
                     rdfs:label "Feeling Of Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#FinancialBurden
-bbo:FinancialBurden rdf:type owl:Class ;
-                    owl:equivalentClass [ owl:intersectionOf ( bbo:BurdenProcess
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#FinancialBurden
+BBO:FinancialBurden rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( BBO:BurdenProcess
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty obo:BFO_0000117 ;
                                                                  owl:someValuesFrom [ owl:intersectionOf ( obo:MFOEM_000002
                                                                                                            [ rdf:type owl:Restriction ;
                                                                                                              owl:onProperty CommonCoreOntologies:has_output ;
-                                                                                                             owl:someValuesFrom bbo:AppraisalOfFinancialBurden
+                                                                                                             owl:someValuesFrom BBO:AppraisalOfFinancialBurden
                                                                                                            ]
                                                                                                          ) ;
                                                                                       rdf:type owl:Class
@@ -720,20 +746,20 @@ bbo:FinancialBurden rdf:type owl:Class ;
                                                              ) ;
                                           rdf:type owl:Class
                                         ] ;
-                    rdfs:subClassOf bbo:BurdenProcess ;
+                    rdfs:subClassOf BBO:BurdenProcess ;
                     CommonCoreOntologies:definition "A Financial Burden is a type of burden that features appraisals related to financial processes (i.e., processes that involve the depletion of an individual's financial resources)."@en ;
                     rdfs:label "Financial Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#FormalCaregiverRole
-bbo:FormalCaregiverRole rdf:type owl:Class ;
-                        rdfs:subClassOf bbo:CaregiverRole ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#FormalCaregiverRole
+BBO:FormalCaregiverRole rdf:type owl:Class ;
+                        rdfs:subClassOf BBO:CaregiverRole ;
                         CommonCoreOntologies:definition "A Formal Caregiver Role is a caregiver role borne by formal caregivers, such as health professionals."@en ;
                         rdfs:label "Formal Caregiver Role"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#HealthCondition
-bbo:HealthCondition rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#HealthCondition
+BBO:HealthCondition rdf:type owl:Class ;
                     owl:equivalentClass [ rdf:type owl:Class ;
                                           owl:unionOf ( obo:OGMS_0000031
                                                         obo:OGMS_0000045
@@ -745,12 +771,12 @@ bbo:HealthCondition rdf:type owl:Class ;
                     rdfs:label "Health Condition"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#HumanPatient
-bbo:HumanPatient rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#HumanPatient
+BBO:HumanPatient rdf:type owl:Class ;
                  owl:equivalentClass [ owl:intersectionOf ( obo:MF_0000016
                                                             [ rdf:type owl:Restriction ;
                                                               owl:onProperty obo:BFO_0000196 ;
-                                                              owl:someValuesFrom bbo:PatientRole
+                                                              owl:someValuesFrom BBO:PatientRole
                                                             ]
                                                           ) ;
                                        rdf:type owl:Class
@@ -760,9 +786,9 @@ bbo:HumanPatient rdf:type owl:Class ;
                  rdfs:label "Human Patient"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#HumanPatientWithChronicHealthCondition
-bbo:HumanPatientWithChronicHealthCondition rdf:type owl:Class ;
-                                           owl:equivalentClass [ owl:intersectionOf ( bbo:HumanPatient
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#HumanPatientWithChronicHealthCondition
+BBO:HumanPatientWithChronicHealthCondition rdf:type owl:Class ;
+                                           owl:equivalentClass [ owl:intersectionOf ( BBO:HumanPatient
                                                                                       [ rdf:type owl:Class ;
                                                                                         owl:unionOf ( [ rdf:type owl:Restriction ;
                                                                                                         owl:onProperty obo:BFO_0000056 ;
@@ -770,47 +796,47 @@ bbo:HumanPatientWithChronicHealthCondition rdf:type owl:Class ;
                                                                                                       ]
                                                                                                       [ rdf:type owl:Restriction ;
                                                                                                         owl:onProperty obo:BFO_0000178 ;
-                                                                                                        owl:someValuesFrom bbo:ChronicDisorder
+                                                                                                        owl:someValuesFrom BBO:ChronicDisorder
                                                                                                       ]
                                                                                                       [ rdf:type owl:Restriction ;
                                                                                                         owl:onProperty obo:BFO_0000196 ;
-                                                                                                        owl:someValuesFrom bbo:ChronicDisease
+                                                                                                        owl:someValuesFrom BBO:ChronicDisease
                                                                                                       ]
                                                                                                     )
                                                                                       ]
                                                                                     ) ;
                                                                  rdf:type owl:Class
                                                                ] ;
-                                           rdfs:subClassOf bbo:HumanPatient ;
+                                           rdfs:subClassOf BBO:HumanPatient ;
                                            CommonCoreOntologies:definition "A Human Patient With Chronic Health Condition is a Human Patient that has at least one Chronic Health Condition."@en ;
                                            rdfs:label "Human Patient With Chronic Health Condition"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#InformalCaregiverRole
-bbo:InformalCaregiverRole rdf:type owl:Class ;
-                          rdfs:subClassOf bbo:CaregiverRole ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#InformalCaregiverRole
+BBO:InformalCaregiverRole rdf:type owl:Class ;
+                          rdfs:subClassOf BBO:CaregiverRole ;
                           CommonCoreOntologies:definition "An Informal Caregiver Role is a role borne by informal caregivers, such as family members."@en ;
                           rdfs:label "Informal Caregiver Role"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#MentalRepresentation
-bbo:MentalRepresentation rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#MentalRepresentation
+BBO:MentalRepresentation rdf:type owl:Class ;
                          rdfs:subClassOf obo:MF_0000030 ,
                                          obo:MF_0000075 ;
                          CommonCoreOntologies:definition "A Mental Representation is a representation that is also a mental quality."@en ;
                          rdfs:label "Mental Representation"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#MorbidityStatus
-bbo:MorbidityStatus rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#MorbidityStatus
+BBO:MorbidityStatus rdf:type owl:Class ;
                     rdfs:subClassOf obo:BFO_0000019 ;
                     CommonCoreOntologies:definition "A Morbidity Status is a type of quality that inheres in a bearer in virtue of the number of distinct diseases borne by the bearer."@en ;
                     rdfs:label "Morbidity Status"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#MultimorbidStatus
-bbo:MultimorbidStatus rdf:type owl:Class ;
-                      owl:equivalentClass [ owl:intersectionOf ( bbo:MorbidityStatus
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#MultimorbidStatus
+BBO:MultimorbidStatus rdf:type owl:Class ;
+                      owl:equivalentClass [ owl:intersectionOf ( BBO:MorbidityStatus
                                                                  [ rdf:type owl:Restriction ;
                                                                    owl:onProperty obo:BFO_0000197 ;
                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
@@ -822,22 +848,22 @@ bbo:MultimorbidStatus rdf:type owl:Class ;
                                                                ) ;
                                             rdf:type owl:Class
                                           ] ;
-                      rdfs:subClassOf bbo:MorbidityStatus ;
+                      rdfs:subClassOf BBO:MorbidityStatus ;
                       CommonCoreOntologies:definition "A Multimorbid Status is a type of Morbidity Status. It applies to individuals that are the bearers of two or more diseases."@en ;
                       rdfs:label "Multimorbid Status"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#NegativeEffect
-bbo:NegativeEffect rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#NegativeEffect
+BBO:NegativeEffect rdf:type owl:Class ;
                    owl:equivalentClass [ owl:intersectionOf ( CommonCoreOntologies:Effect
                                                               [ rdf:type owl:Class ;
                                                                 owl:unionOf ( [ owl:intersectionOf ( CommonCoreOntologies:DecreaseOfQuality
                                                                                                      [ rdf:type owl:Restriction ;
                                                                                                        owl:onProperty CommonCoreOntologies:affects ;
-                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( bbo:SubjectiveLikelihood
+                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( BBO:SubjectiveLikelihood
                                                                                                                                                  [ rdf:type owl:Restriction ;
                                                                                                                                                    owl:onProperty obo:BFO_0000176 ;
-                                                                                                                                                   owl:someValuesFrom bbo:PositiveExpectation
+                                                                                                                                                   owl:someValuesFrom BBO:PositiveExpectation
                                                                                                                                                  ]
                                                                                                                                                ) ;
                                                                                                                             rdf:type owl:Class
@@ -849,10 +875,10 @@ bbo:NegativeEffect rdf:type owl:Class ;
                                                                               [ owl:intersectionOf ( CommonCoreOntologies:IncreaseOfQuality
                                                                                                      [ rdf:type owl:Restriction ;
                                                                                                        owl:onProperty CommonCoreOntologies:affects ;
-                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( bbo:SubjectiveLikelihood
+                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( BBO:SubjectiveLikelihood
                                                                                                                                                  [ rdf:type owl:Restriction ;
                                                                                                                                                    owl:onProperty obo:BFO_0000176 ;
-                                                                                                                                                   owl:someValuesFrom bbo:NegativeExpectation
+                                                                                                                                                   owl:someValuesFrom BBO:NegativeExpectation
                                                                                                                                                  ]
                                                                                                                                                ) ;
                                                                                                                             rdf:type owl:Class
@@ -871,38 +897,38 @@ bbo:NegativeEffect rdf:type owl:Class ;
                    rdfs:label "Negative Effect"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#NegativeExpectation
-bbo:NegativeExpectation rdf:type owl:Class ;
-                        rdfs:subClassOf bbo:Expectation ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#NegativeExpectation
+BBO:NegativeExpectation rdf:type owl:Class ;
+                        rdfs:subClassOf BBO:Expectation ;
                         CommonCoreOntologies:definition "A Negative Expectation is an Expectation that refers to a Situation that an individual optimistically expects not to occur."@en ;
                         rdfs:label "Negative Expectation"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#PatientRole
-bbo:PatientRole rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#PatientRole
+BBO:PatientRole rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000023 ;
                 CommonCoreOntologies:definition "A Patient Role is a role borne by patients."@en ;
                 rdfs:label "Patient Role"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#PortionOfReality
-bbo:PortionOfReality rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#PortionOfReality
+BBO:PortionOfReality rdf:type owl:Class ;
                      rdfs:subClassOf obo:BFO_0000001 ;
                      CommonCoreOntologies:definition "A Portion of Reality is an entity that acts as a container for other entities."@en ;
                      rdfs:label "Portion Of Reality"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#PositiveEffect
-bbo:PositiveEffect rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#PositiveEffect
+BBO:PositiveEffect rdf:type owl:Class ;
                    owl:equivalentClass [ owl:intersectionOf ( CommonCoreOntologies:Effect
                                                               [ rdf:type owl:Class ;
                                                                 owl:unionOf ( [ owl:intersectionOf ( CommonCoreOntologies:DecreaseOfQuality
                                                                                                      [ rdf:type owl:Restriction ;
                                                                                                        owl:onProperty CommonCoreOntologies:affects ;
-                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( bbo:SubjectiveLikelihood
+                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( BBO:SubjectiveLikelihood
                                                                                                                                                  [ rdf:type owl:Restriction ;
                                                                                                                                                    owl:onProperty obo:BFO_0000176 ;
-                                                                                                                                                   owl:someValuesFrom bbo:NegativeExpectation
+                                                                                                                                                   owl:someValuesFrom BBO:NegativeExpectation
                                                                                                                                                  ]
                                                                                                                                                ) ;
                                                                                                                             rdf:type owl:Class
@@ -914,10 +940,10 @@ bbo:PositiveEffect rdf:type owl:Class ;
                                                                               [ owl:intersectionOf ( CommonCoreOntologies:IncreaseOfQuality
                                                                                                      [ rdf:type owl:Restriction ;
                                                                                                        owl:onProperty CommonCoreOntologies:affects ;
-                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( bbo:SubjectiveLikelihood
+                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( BBO:SubjectiveLikelihood
                                                                                                                                                  [ rdf:type owl:Restriction ;
                                                                                                                                                    owl:onProperty obo:BFO_0000176 ;
-                                                                                                                                                   owl:someValuesFrom bbo:PositiveExpectation
+                                                                                                                                                   owl:someValuesFrom BBO:PositiveExpectation
                                                                                                                                                  ]
                                                                                                                                                ) ;
                                                                                                                             rdf:type owl:Class
@@ -936,29 +962,29 @@ bbo:PositiveEffect rdf:type owl:Class ;
                    rdfs:label "Positive Effect"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#PositiveExpectation
-bbo:PositiveExpectation rdf:type owl:Class ;
-                        rdfs:subClassOf bbo:Expectation ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#PositiveExpectation
+BBO:PositiveExpectation rdf:type owl:Class ;
+                        rdfs:subClassOf BBO:Expectation ;
                         CommonCoreOntologies:definition "A Positive Expectation is an Expectation that refers to a Situation that an individual optimistically expects to occur."@en ;
                         rdfs:label "Positive Expectation"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#SideEffect
-bbo:SideEffect rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#SideEffect
+BBO:SideEffect rdf:type owl:Class ;
                rdfs:subClassOf CommonCoreOntologies:Effect ;
                CommonCoreOntologies:definition "A Side-Effect is an unintended effect of a Treatment Process."@en ;
                rdfs:label "Side-Effect"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#SideEffectBurden
-bbo:SideEffectBurden rdf:type owl:Class ;
-                     owl:equivalentClass [ owl:intersectionOf ( bbo:BurdenProcess
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#SideEffectBurden
+BBO:SideEffectBurden rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( BBO:BurdenProcess
                                                                 [ rdf:type owl:Restriction ;
                                                                   owl:onProperty obo:BFO_0000117 ;
                                                                   owl:someValuesFrom [ owl:intersectionOf ( obo:MFOEM_000002
                                                                                                             [ rdf:type owl:Restriction ;
                                                                                                               owl:onProperty CommonCoreOntologies:has_output ;
-                                                                                                              owl:someValuesFrom bbo:AppraisalOfSideEffectBurden
+                                                                                                              owl:someValuesFrom BBO:AppraisalOfSideEffectBurden
                                                                                                             ]
                                                                                                           ) ;
                                                                                        rdf:type owl:Class
@@ -967,41 +993,41 @@ bbo:SideEffectBurden rdf:type owl:Class ;
                                                               ) ;
                                            rdf:type owl:Class
                                          ] ;
-                     rdfs:subClassOf bbo:BurdenProcess ;
+                     rdfs:subClassOf BBO:BurdenProcess ;
                      CommonCoreOntologies:definition "A Side-Effect Burden is a type of burden that features appraisals related to side-effects."@en ;
                      rdfs:label "Side-Effect Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#Situation
-bbo:Situation rdf:type owl:Class ;
-              rdfs:subClassOf bbo:PortionOfReality ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#Situation
+BBO:Situation rdf:type owl:Class ;
+              rdfs:subClassOf BBO:PortionOfReality ;
               CommonCoreOntologies:definition "A Situation is a Portion of Reality that refers to a configuration of entities. A Situation can be either actual or counterfactual."@en ;
               rdfs:label "Situation"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#SubjectiveImportance
-bbo:SubjectiveImportance rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#SubjectiveImportance
+BBO:SubjectiveImportance rdf:type owl:Class ;
                          rdfs:subClassOf obo:MF_0000075 ;
                          CommonCoreOntologies:definition "A Subjective Importance is a mental quality that signifies the importance of an expected Situation (a Situation represented by an Expectation) to an individual that is the bearer of the Expectation."@en ;
                          rdfs:label "Subjective Importance"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#SubjectiveLikelihood
-bbo:SubjectiveLikelihood rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#SubjectiveLikelihood
+BBO:SubjectiveLikelihood rdf:type owl:Class ;
                          rdfs:subClassOf obo:MF_0000075 ;
                          CommonCoreOntologies:definition "A Subjective Likelihood is a mental quality that signifies the likelihood of an expected Situation (a Situation represented by an Expectation) materializing."@en ;
                          rdfs:label "Subjective Likelihood"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#SymptomBurden
-bbo:SymptomBurden rdf:type owl:Class ;
-                  owl:equivalentClass [ owl:intersectionOf ( bbo:BurdenProcess
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#SymptomBurden
+BBO:SymptomBurden rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( BBO:BurdenProcess
                                                              [ rdf:type owl:Restriction ;
                                                                owl:onProperty obo:BFO_0000117 ;
                                                                owl:someValuesFrom [ owl:intersectionOf ( obo:MFOEM_000002
                                                                                                          [ rdf:type owl:Restriction ;
                                                                                                            owl:onProperty CommonCoreOntologies:has_output ;
-                                                                                                           owl:someValuesFrom bbo:AppraisalOfSymptomBurden
+                                                                                                           owl:someValuesFrom BBO:AppraisalOfSymptomBurden
                                                                                                          ]
                                                                                                        ) ;
                                                                                     rdf:type owl:Class
@@ -1010,27 +1036,27 @@ bbo:SymptomBurden rdf:type owl:Class ;
                                                            ) ;
                                         rdf:type owl:Class
                                       ] ;
-                  rdfs:subClassOf bbo:BurdenProcess ;
+                  rdfs:subClassOf BBO:BurdenProcess ;
                   CommonCoreOntologies:definition "A Symptom Burden is a type of burden that features appraisals related to symptom processes."@en ;
                   rdfs:label "Symptom Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#SymptomProcess
-bbo:SymptomProcess rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#SymptomProcess
+BBO:SymptomProcess rdf:type owl:Class ;
                    rdfs:subClassOf obo:BFO_0000015 ;
                    CommonCoreOntologies:definition "A Symptom Process is a process experienced by an individual as part of a disease course."@en ;
                    rdfs:label "Symptom Process"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#TreatmentBurden
-bbo:TreatmentBurden rdf:type owl:Class ;
-                    owl:equivalentClass [ owl:intersectionOf ( bbo:BurdenProcess
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#TreatmentBurden
+BBO:TreatmentBurden rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( BBO:BurdenProcess
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty obo:BFO_0000117 ;
                                                                  owl:someValuesFrom [ owl:intersectionOf ( obo:MFOEM_000002
                                                                                                            [ rdf:type owl:Restriction ;
                                                                                                              owl:onProperty CommonCoreOntologies:has_output ;
-                                                                                                             owl:someValuesFrom bbo:AppraisalOfTreatmentBurden
+                                                                                                             owl:someValuesFrom BBO:AppraisalOfTreatmentBurden
                                                                                                            ]
                                                                                                          ) ;
                                                                                       rdf:type owl:Class
@@ -1039,21 +1065,21 @@ bbo:TreatmentBurden rdf:type owl:Class ;
                                                              ) ;
                                           rdf:type owl:Class
                                         ] ;
-                    rdfs:subClassOf bbo:BurdenProcess ;
+                    rdfs:subClassOf BBO:BurdenProcess ;
                     CommonCoreOntologies:definition "A Treatment Burden is a type of burden that features appraisals related to treatment processes."@en ;
                     rdfs:label "Treatment Burden"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#TreatmentProcess
-bbo:TreatmentProcess rdf:type owl:Class ;
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#TreatmentProcess
+BBO:TreatmentProcess rdf:type owl:Class ;
                      rdfs:subClassOf obo:OGMS_0000096 ;
                      CommonCoreOntologies:definition "A Treatment Process is a health care process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process."@en ;
                      rdfs:label "Treatment Process"@en .
 
 
-###  http://www.cognosys.co.uk/ontologies/BBO.owl#UnimorbidStatus
-bbo:UnimorbidStatus rdf:type owl:Class ;
-                    owl:equivalentClass [ owl:intersectionOf ( bbo:MorbidityStatus
+###  https://git.soton.ac.uk/meldb/ontologies/-/raw/main/BBO.owl#UnimorbidStatus
+BBO:UnimorbidStatus rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( BBO:MorbidityStatus
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty obo:BFO_0000197 ;
                                                                  owl:someValuesFrom [ rdf:type owl:Restriction ;
@@ -1065,33 +1091,9 @@ bbo:UnimorbidStatus rdf:type owl:Class ;
                                                              ) ;
                                           rdf:type owl:Class
                                         ] ;
-                    rdfs:subClassOf bbo:MorbidityStatus ;
+                    rdfs:subClassOf BBO:MorbidityStatus ;
                     CommonCoreOntologies:definition "A Unimorbid Status is a type of Morbidity Status. It applies to individuals that are the bearers of exactly one disease."@en ;
                     rdfs:label "Unimorbid Status"@en .
-
-
-###  http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality
-CommonCoreOntologies:DecreaseOfQuality rdf:type owl:Class .
-
-
-###  http://www.ontologyrepository.com/CommonCoreOntologies/Disease
-
-###  http://www.ontologyrepository.com/CommonCoreOntologies/Effect
-CommonCoreOntologies:Effect rdf:type owl:Class .
-
-
-###  http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality
-CommonCoreOntologies:IncreaseOfQuality rdf:type owl:Class .
-
-
-###  http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity
-
-###  http://www.ontologyrepository.com/CommonCoreOntologies/Objective
-CommonCoreOntologies:Objective rdf:type owl:Class .
-
-
-###  http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity
-CommonCoreOntologies:RepresentationalInformationContentEntity rdf:type owl:Class .
 
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -1119,12 +1121,12 @@ CommonCoreOntologies:RepresentationalInformationContentEntity rdf:type owl:Class
 #    Annotations
 #################################################################
 
-obo:GO_0007600 bbo:documentationComment "Added missing label."@en ;
-                rdfs:label "sensory perception"@en .
+obo:GO_0007600 rdfs:label "sensory perception"@en ;
+                BBO:documentationComment "Added missing label."@en .
 
 
-obo:NBO_0000003 bbo:documentationComment "Added missing label."@en ;
-                rdfs:label "emotional behavior"@en .
+obo:NBO_0000003 rdfs:label "emotional behavior"@en ;
+                BBO:documentationComment "Added missing label."@en .
 
 
 #################################################################
@@ -1132,16 +1134,16 @@ obo:NBO_0000003 bbo:documentationComment "Added missing label."@en ;
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( bbo:CognitiveBurden
-                bbo:DiseaseBurden
-                bbo:EmotionalBurden
-                bbo:EpistemicBurden
-                bbo:FinancialBurden
-                bbo:SideEffectBurden
-                bbo:SymptomBurden
-                bbo:TreatmentBurden
+  owl:members ( BBO:CognitiveBurden
+                BBO:DiseaseBurden
+                BBO:EmotionalBurden
+                BBO:EpistemicBurden
+                BBO:FinancialBurden
+                BBO:SideEffectBurden
+                BBO:SymptomBurden
+                BBO:TreatmentBurden
               )
 ] .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

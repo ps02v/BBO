@@ -15,15 +15,18 @@ The BBO builds on the following ontologies:
 A merged version of the BBO (containing all imported ontologies) is available [here](bbo-merged/).
 
 # Directory Structure
-The BBO repository is organized as follows:
 
-* [BBO.owl](BBO.owl): The latest version of the BBO in Web Ontology Language (OWL) format.
-* [BBO.ttl](BBO.ttl): The latest version of the BBO in Terse RDF Triple Language (Turtle) format.
-    * bbo-merged [dir]:
-        * [BBO_Merged.owl](bbo-merged/BBO_Merged.owl): A merged version of the BBO, including all imported ontologies (OWL format).
-        * [BBO_Merged.ttl](bbo-merged/BBO_Merged.ttl): A merged version of the BBO, including all imported ontologies (Turtle format).
-    * documentation [dir]:
-        * [BBO Ontology Documentation.pdf](documentation/BBO%20Ontology%20Documentation.pdf): Documentation for the classes/properties contained in the BBO, as well as a subset of the classes/properties in imported ontologies. 
+## Files
+* [`BBO.owl`](BBO.owl): The latest version of the BBO in Web Ontology Language (OWL) format.
+* [`BBO.ttl`](BBO.ttl): The latest version of the BBO in Terse RDF Triple Language (Turtle) format.
+
+## Directories
+* `documentation/`: Contains documentation related to the BBO.
+  * [`BBO Ontology Documentation.pdf`](documentation/BBO%20Ontology%20Documentation.pdf): Documentation for the classes/properties contained in the BBO, as well as a subset of the classes/properties in imported ontologies.
+* `archive/`: Contains archived versions of the BBO for historical reference.
+* `bbo-merged/`: Contains merged versions of the BBO.
+    * [BBO_Merged.owl](bbo-merged/BBO_Merged.owl): A merged version of the BBO, including all imported ontologies (OWL format).
+    * [BBO_Merged.ttl](bbo-merged/BBO_Merged.ttl): A merged version of the BBO, including all imported ontologies (Turtle format).
 
 # BBO Entities
 Some of the entities contained in the BBO are as follows:
@@ -46,7 +49,7 @@ As suggested by this list, the BBO adopts a subjective or phenomenological appro
 Queries relating to the BBO should be directed to [Dr Paul Smart](mailto:ps02v@ecs.soton.ac.uk?subject=Biomedical%20Burden%20Ontology).
 
 # Acknowledgements
-The BBO was developed in the context of the [MELD-B](https://www.southampton.ac.uk/publicpolicy/support-for-policymakers/policy-projects/Current%20projects/meld-b.page) project, which is funded by the UK [NIHR](https://www.nihr.ac.uk/). 
+The BBO was developed in the context of the [MELD-B](https://www.southampton.ac.uk/publicpolicy/support-for-policymakers/policy-projects/Current%20projects/meld-b.page) project, which is funded by the UK [National Institute of Health Research](https://www.nihr.ac.uk/) under grant agreement NIHR203988. 
 
 
 
